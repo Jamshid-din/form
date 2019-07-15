@@ -6,6 +6,8 @@
     "axios": "^0.19.0",
     "bootstrap": "^4.3.1",
     "firebase": "^6.2.4",
+    "gh-pages": "^2.0.1",
+    "homepage" : "https://jamshid-din.github.io/forms/",
     "oracledb": "^3.1.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
@@ -19,8 +21,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build", 
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
